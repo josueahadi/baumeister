@@ -68,6 +68,6 @@ To start the development server and see your project in action:
 1. Run the development server:
 
     ```bash
-    npm dev
+    npm run dev
     ```
 2. Open "Live Server" in your vscode. You will be redirected to the project preview
