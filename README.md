@@ -62,7 +62,7 @@ After cloning the repository, you need to install the project dependencies using
     npm install
     ```
 
-###     Starting the development server
+### Start the development server
 To start the development server and see your project in action:
 
 1. Run the development server:
