@@ -14,6 +14,9 @@ module.exports = {
         lg: "8rem",
       },
     },
+    colors: {
+      "custom-green": "#00672E",
+    },
   },
   plugins: [],
 };
