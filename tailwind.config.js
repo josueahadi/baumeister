@@ -15,7 +15,7 @@ module.exports = {
       },
     },
     colors: {
-      "custom-green": "#00672E"
+      "custom-green": "#00672E",
     },
   },
   plugins: [],
