@@ -8,6 +8,5 @@
 @layer base {
     body {
         @apply font-outfit;
-       
     }
 }
