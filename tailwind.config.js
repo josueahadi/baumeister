@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js}", "./index.html"],
   theme: {
     fontFamily: {
       outfit: ["Outfit", "sans-serif"],
@@ -16,7 +16,9 @@ module.exports = {
     },
     colors: {
       "custom-green": "#00672E",
+      "custom-bgcolor": "#EFECEA"
     },
+    
   },
   plugins: [],
 };
