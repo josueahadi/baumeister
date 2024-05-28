@@ -6,14 +6,7 @@
 
 /* Apply the font globally */
 @layer base {
-<<<<<<< HEAD
     body {
         @apply font-outfit;
     }
 }
-=======
-  body {
-    @apply font-outfit;
-  }
-}
->>>>>>> fc628085bcc0811246a4547e691f487fd91f696a
