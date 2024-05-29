@@ -16,12 +16,8 @@ module.exports = {
     },
     colors: {
       "custom-green": "#00672E",
-<<<<<<< HEAD
       "custom-bgcolor": "#EFECEA"
     },  
-=======
-    },
->>>>>>> dev
   },
   plugins: [],
 };
