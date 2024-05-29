@@ -16,7 +16,8 @@ module.exports = {
     },
     colors: {
       "custom-green": "#00672E",
-    },
+      "custom-bgcolor": "#EFECEA"
+    },  
   },
   plugins: [],
 };
