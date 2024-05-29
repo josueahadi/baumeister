@@ -19,6 +19,7 @@
         .then((html) => {
           document.getElementById(id).innerHTML = html;
         });
+      };
     window.onload = () => {
         loadComponents('header', 'src/sections/header.html');
         loadComponents('hero', 'src/sections/hero.html');
@@ -26,11 +27,10 @@
         loadComponents('services','src/sections/services.html')
         loadComponents('footer', 'src/sections/footer.html');
     }
-  };
+
 </script>
 <body class="relative">
     <div id="header" class="sticky top-0 z-50"></div>
-    <div id="header"></div>
     <div id="hero"></div>
     <div id="about"></div>
     <div id="services"></div>
