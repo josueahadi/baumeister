@@ -11,7 +11,7 @@ module.exports = {
         DEFAULT: "1rem",
         sm: "2rem",
         md: "4rem",
-        lg: "12rem",
+        lg: "8rem",
       },
     },
     colors: {
