@@ -11,13 +11,13 @@ module.exports = {
         DEFAULT: "1rem",
         sm: "2rem",
         md: "4rem",
-        lg: "8rem",
+        lg: "12rem",
       },
     },
     colors: {
       "custom-green": "#00672E",
-      "custom-bgcolor": "#EFECEA"
-    },  
+      "custom-bgcolor": "#EFECEA",
+    },
   },
   plugins: [],
 };
