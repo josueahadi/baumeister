@@ -6,7 +6,8 @@
 
 /* Apply the font globally */
 @layer base {
-  body {
-    @apply font-outfit;
-  }
+    body {
+        @apply font-outfit;
+        @apply bg-custom-bgcolor
+    }
 }
