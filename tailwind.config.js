@@ -1,7 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./index.html"],
+  content: ["./src/**/*.{html,js}", "./*.html"],
   theme: {
+    extend: {
+      colors: {
+        "custom-green": "#00672E",
+        "custom-bgcolor": "#EFECEA",
+      },
+    },
     fontFamily: {
       outfit: ["Outfit", "sans-serif"],
     },
@@ -13,10 +19,6 @@ module.exports = {
         md: "4rem",
         lg: "8rem",
       },
-    },
-    colors: {
-      "custom-green": "#00672E",
-      "custom-bgcolor": "#EFECEA",
     },
   },
   plugins: [],
