@@ -18,21 +18,6 @@
         .then((response) => response.text())
         .then((html) => {
           document.getElementById(id).innerHTML = html;
-          let headerDiv = document.getElementById('header');
-          let hamburgerButton = headerDiv.querySelector('#button');
-          let closeButton = headerDiv.querySelector('#close')
-          let menu = headerDiv.querySelector('#menu-bar')
-          hamburgerButton.addEventListener('click', () => {
-                  menu.classList.remove('hidden')
-                  closeButton.classList.remove('hidden')
-                  hamburgerButton.classList.add('hidden')
-          })
-          closeButton.addEventListener('click',() => {
-            menu.classList.add('hidden')
-            hamburgerButton.classList.remove('hidden')
-            closeButton.classList.add('hidden')
-          })
-
         });
     };
     window.onload = () => {
@@ -43,7 +28,6 @@
       loadComponents("services", "src/sections/services.html");
       loadComponents("footer", "src/sections/footer.html");
     };
-    
   </script>
   <body class="relative">
     <div id="header" class="sticky top-0 z-50"></div>
