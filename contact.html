@@ -22,21 +22,13 @@
     };
     window.onload = () => {
       loadComponents("header", "src/sections/header.html");
-      loadComponents("hero", "src/sections/hero.html");
-      loadComponents("about", "src/sections/about.html");
-      loadComponents("sticky", "src/sections/sticky.html");
-      loadComponents("reference", "src/sections/reference.html");
-      loadComponents("services", "src/sections/services.html");
+      loadComponents("contact-section", "src/sections/contact-section.html");
       loadComponents("footer", "src/sections/footer.html");
     };
   </script>
-  <body class="relative">
-    <div id="header" class="sticky z-50 top-0 mt-5"></div>
-    <div id="hero"></div>
-    <div id="about"></div>
-    <div id="sticky" class="sticky -top-14 md:-top-6 lg:top-0 mb-32 z-40"></div>
-    <div id="services"></div>
-    <div id="reference" class="w-full flex mt-80"></div>
+  <body class="relative text-custom-green">
+    <div id="header" class="sticky top-0 z-50"></div>
+    <div id="contact-section"></div>
     <div id="footer"></div>
   </body>
 </html>
