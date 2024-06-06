@@ -22,7 +22,7 @@
           let heroDiv = document.getElementById('hero');
           let paragraphDiv = heroDiv.querySelector('#paragraphDiv');
           let footer = document.getElementById('footer');
-          let contact = document.getElementById('contact')
+          let contact = document.getElementById('contact-section')
           let hamburgerButton = greenheaderDiv.querySelector('#button');
           let closeButton = greenheaderDiv.querySelector('#close')
           let menu = heroDiv.querySelector('#menu-bar')
@@ -33,7 +33,7 @@
                   contact.classList.add('hidden')
                   footer.classList.add('hidden')
                   paragraphDiv.classList.add('hidden')
-                
+                  heroDiv.classList.remove('hidden')
           })
           closeButton.addEventListener('click',() => {
             menu.classList.add('hidden')
@@ -41,6 +41,7 @@
             closeButton.classList.add('hidden')
             contact.classList.remove('hidden')
             footer.classList.remove('hidden')
+            heroDiv.classList.add('hidden')
           })
         });
     };
@@ -55,5 +56,6 @@
     <div id="greenheader" class="sticky top-0 z-50"></div>
     <div id="contact-section"></div>
     <div id="footer"></div>
+    <div id="hero" class="hidden"></div>
   </body>
 </html>
