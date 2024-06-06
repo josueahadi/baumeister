@@ -18,16 +18,41 @@
         .then((response) => response.text())
         .then((html) => {
           document.getElementById(id).innerHTML = html;
+          let greenheaderDiv = document.getElementById('greenheader');
+          let heroDiv = document.getElementById('hero');
+          let paragraphDiv = heroDiv.querySelector('#paragraphDiv');
+          let footer = document.getElementById('footer');
+          let contact = document.getElementById('contact')
+          let hamburgerButton = greenheaderDiv.querySelector('#button');
+          let closeButton = greenheaderDiv.querySelector('#close')
+          let menu = heroDiv.querySelector('#menu-bar')
+          hamburgerButton.addEventListener('click', () => {
+                  menu.classList.remove('hidden')
+                  closeButton.classList.remove('hidden')
+                  hamburgerButton.classList.add('hidden')
+                  contact.classList.add('hidden')
+                  footer.classList.add('hidden')
+                  paragraphDiv.classList.add('hidden')
+                
+          })
+          closeButton.addEventListener('click',() => {
+            menu.classList.add('hidden')
+            hamburgerButton.classList.remove('hidden')
+            closeButton.classList.add('hidden')
+            contact.classList.remove('hidden')
+            footer.classList.remove('hidden')
+          })
         });
     };
     window.onload = () => {
-      loadComponents("header", "src/sections/header.html");
+      loadComponents("greenheader", "src/sections/greenheader.html");
+      loadComponents("hero", "src/sections/hero.html");
       loadComponents("contact-section", "src/sections/contact-section.html");
       loadComponents("footer", "src/sections/footer.html");
     };
   </script>
   <body class="relative text-custom-green">
-    <div id="header" class="sticky top-0 z-50"></div>
+    <div id="greenheader" class="sticky top-0 z-50"></div>
     <div id="contact-section"></div>
     <div id="footer"></div>
   </body>
