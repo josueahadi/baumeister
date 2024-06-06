@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'xs': '365px',
+        xs: "365px",
       },
       colors: {
         "custom-green": "#00672E",
