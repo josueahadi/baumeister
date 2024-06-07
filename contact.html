@@ -31,7 +31,7 @@
                   closeButton.classList.remove('hidden')
                   hamburgerButton.classList.add('hidden')
                   contact.classList.add('hidden')
-                  footer.classList.add('hidden')
+                  footer.classList.add('md:hidden')
                   paragraphDiv.classList.add('hidden')
                   heroDiv.classList.remove('hidden')
           })
@@ -40,7 +40,7 @@
             hamburgerButton.classList.remove('hidden')
             closeButton.classList.add('hidden')
             contact.classList.remove('hidden')
-            footer.classList.remove('hidden')
+            footer.classList.remove('md:hidden')
             heroDiv.classList.add('hidden')
           })
         });
@@ -55,7 +55,7 @@
   <body class="relative text-custom-green">
     <div id="greenheader" class="sticky top-0 z-50"></div>
     <div id="contact-section"></div>
-    <div id="footer"></div>
+    <div id="footer" class="hidden md:block"></div>
     <div id="hero" class="hidden"></div>
   </body>
 </html>
