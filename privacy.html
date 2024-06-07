@@ -22,7 +22,7 @@
           let heroDiv = document.getElementById('hero');
           let paragraphDiv = heroDiv.querySelector('#paragraphDiv');
           let footer = document.getElementById('footer');
-          let contact = document.getElementById('contact-section')
+          let dataPrivacy= document.getElementById('dataPrivacy')
           let hamburgerButton = greenheaderDiv.querySelector('#button');
           let closeButton = greenheaderDiv.querySelector('#close')
           let menu = heroDiv.querySelector('#menu-bar')
@@ -30,7 +30,7 @@
                   menu.classList.remove('hidden')
                   closeButton.classList.remove('hidden')
                   hamburgerButton.classList.add('hidden')
-                  contact.classList.add('hidden')
+                  dataPrivacy.classList.add('hidden')
                   footer.classList.add('hidden')
                   paragraphDiv.classList.add('hidden')
                   heroDiv.classList.remove('hidden')
@@ -39,23 +39,23 @@
             menu.classList.add('hidden')
             hamburgerButton.classList.remove('hidden')
             closeButton.classList.add('hidden')
-            contact.classList.remove('hidden')
-            footer.classList.remove('hidden')
+            dataPrivacy.classList.remove('hidden')
             heroDiv.classList.add('hidden')
           })
         });
     };
     window.onload = () => {
       loadComponents("greenheader", "src/sections/greenheader.html");
-      loadComponents("hero", "src/sections/hero.html");
-      loadComponents("contact-section", "src/sections/contact-section.html");
+      loadComponents("dataPrivacy", "src/sections/dataPrivacy.html");
       loadComponents("footer", "src/sections/footer.html");
+      loadComponents("hero", "src/sections/hero.html");
+      
     };
   </script>
   <body class="relative text-custom-green">
     <div id="greenheader" class="sticky top-0 z-50"></div>
-    <div id="contact-section"></div>
-    <div id="footer"></div>
+    <div id="dataPrivacy"></div>
+    <div id="footer" class="hidden md:block"></div>
     <div id="hero" class="hidden"></div>
   </body>
 </html>

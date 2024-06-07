@@ -18,6 +18,39 @@
         .then((response) => response.text())
         .then((html) => {
           document.getElementById(id).innerHTML = html;
+          let headerDiv = document.getElementById('header');
+          let heroDiv = document.getElementById('hero');
+          let paragraphDiv = heroDiv.querySelector('#paragraphDiv');
+          let aboutSection = document.getElementById('about');
+          let services = document.getElementById('services');
+          let referenceSection = document.getElementById('reference');
+          let sticky = document.getElementById('sticky');
+          let footer = document.getElementById('footer');
+          let hamburgerButton = headerDiv.querySelector('#button');
+          let closeButton = headerDiv.querySelector('#close')
+          let menu = heroDiv.querySelector('#menu-bar')
+          hamburgerButton.addEventListener('click', () => {
+                  menu.classList.remove('hidden')
+                  closeButton.classList.remove('hidden')
+                  hamburgerButton.classList.add('hidden')
+                  aboutSection.classList.add('hidden')
+                  services.classList.add('hidden')
+                  referenceSection.classList.add('hidden')
+                  sticky.classList.add('hidden')
+                  footer.classList.add('hidden')
+                  paragraphDiv.classList.add('hidden')
+          })
+          closeButton.addEventListener('click',() => {
+            menu.classList.add('hidden')
+            hamburgerButton.classList.remove('hidden')
+            closeButton.classList.add('hidden')
+            aboutSection.classList.remove('hidden')
+            services.classList.remove('hidden')
+            paragraphDiv.classList.remove('hidden')
+            referenceSection.classList.remove('hidden')
+            sticky.classList.remove('hidden')
+            footer.classList.remove('hidden')
+          })
         });
     };
     window.onload = () => {
@@ -34,9 +67,12 @@
     <div id="header" class="sticky z-50 top-0 mt-5"></div>
     <div id="hero"></div>
     <div id="about"></div>
-    <div id="sticky" class="sticky -top-14 md:-top-6 lg:top-0 mb-32 z-40"></div>
+    <div
+      id="sticky"
+      class="sticky -top-14 md:-top-6 lg:top-0 mb-32 z-40 md:z-10"
+    ></div>
     <div id="services"></div>
-    <div id="reference" class="w-full flex mt-80"></div>
+    <div id="reference" class="w-full flex mt-72"></div>
     <div id="footer"></div>
   </body>
 </html>
